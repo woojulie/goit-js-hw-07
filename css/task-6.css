@@ -1,0 +1,57 @@
+ #controls {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+     margin-bottom: 20px;
+ }
+
+ #boxes {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 10px;
+ }
+
+ #boxes div {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 14px;
+     color: white;
+ }
+.input-number {
+    border: 1px solid #808080;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+ .create-btn {
+    background: #4e75ff;
+    border-radius: 8px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+ }
+
+ .destroy-btn {
+    background: #ff4e4e;
+    border-radius: 8px;
+    border: none;
+    padding: 8px 16px;
+    width: 120px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+ }
