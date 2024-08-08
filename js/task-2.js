@@ -25,10 +25,30 @@ const images = [
   },
 ];
 
-const gallery = document.querySelector('.gallery');
+const makeGalleryCard = (imgInfo) => {
+  const liElement = document.createElement("li");
+  liElement.classList.add("gallery-item");
+  liElement.style.width = "calc((100% - 48px) / 3)"
 
-    const galleryItems = images.map(({ url, alt }) => {
-      return `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-image"></li>`;
-    }).join('');
+  const cardImg = document.createElement("img");
+  cardImg.src = imgInfo.url;
+  cardImg.alt = imgInfo.alt;
+  cardImg.width = "360";
+  cardImg.height = "300";
+  
 
-    gallery.insertAdjacentHTML('beforeend', galleryItems);
+  liElement.append(cardImg);
+  return liElement;
+}
+
+const gelleryCardArr = images.map(imgInfo => makeGalleryCard(imgInfo));
+
+const listOfCard = document.querySelector(".gallery");
+listOfCard.append(...gelleryCardArr);
+
+listOfCard.style.display = "flex";
+listOfCard.style.flexWrap = "wrap";
+listOfCard.style.justifyContent = "center";
+listOfCard.style.margin = "100px auto";
+listOfCard.style.maxWidth = "1128px";
+listOfCard.style.listStyleType = "none";

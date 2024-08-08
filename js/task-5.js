@@ -10,3 +10,19 @@ function getRandomHexColor() {
       document.body.style.backgroundColor = newColor;
       colorSpan.textContent = newColor;
     });
+
+changeColorButton.style.borderRadius = "8px";
+changeColorButton.style.padding = "8px 16px";
+changeColorButton.style.width = "148px";
+changeColorButton.style.height = "40px";
+changeColorButton.style.backgroundColor = "#4e75ff";
+changeColorButton.style.border = "none";
+changeColorButton.style.color = "#ffffff";
+
+const divWidget = document.querySelector(".widget");
+
+divWidget.style.display = "flex";
+divWidget.style.flexWrap = "wrap";
+divWidget.style.justifyContent = "center";
+divWidget.style.margin = "0 auto";
+divWidget.style.width = "169px";
